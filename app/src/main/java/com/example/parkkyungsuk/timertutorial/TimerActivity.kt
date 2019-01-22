@@ -14,11 +14,9 @@ class TimerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timer)
         setSupportActionBar(toolbar)
+        supportActionBar?.title = "      Timer"
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
+        supportActionBar?.setIcon(R.drawble.ic_timer)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
